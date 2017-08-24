@@ -123,6 +123,33 @@ $(document).ready(function(){
 			$(".menu__dropDown").css({"display":"block"});
 		}  
 	});
+	/*
+	$('.menu__dropDown').mouseleave(function(){
+			$(".menu__dropDown").css({"display":"none"});
+	});*/
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".menu__dropDown"); // тут указываем ID элемента
+		var div1 = $(".fa-angle-down");
+		if (!div.is(e.target)
+			&& !div1.is(e.target)
+		    && div.has(e.target).length === 0) { 
+			$(".menu__dropDown").css({"display":"none"});
+		}
+	});
+	/*
+	$(".menu__dropDownLink").click(function(){
+		$(".menu__dropDown").css({"display":"none"});
+	});*/
+	
+	$(".menu__dropDownLink-style4").before().click(function(){
+		if ($(".menu__dropDown-style1").css("display") == "block") {
+			$(".menu__dropDown-style1").css({"display":"none"});
+		}
+		else {
+			$(".menu__dropDown-style1").css({"display":"block"});
+		} 
+	});
+
 });
 
 

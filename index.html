@@ -26,31 +26,38 @@
 				<div><img src="img/bgSlider.jpg" alt="Слаайд1"></div>
 				<div><img src="img/bgSlider.jpg" alt="Слаайд2"></div>
 				<div><img src="img/bgSlider.jpg" alt="Слаайд3"></div>
-			</div>	
-		</div>		
+			</div>
+				
+		</div>	
+				
 	</main>	
-			
+		
 <!-- CONTENT EOF   -->
 
 <!-- BEGIN HEADER -->
 	
 	<header class="header">		
 		<div class="wrapper wrapper-header_w1inside">
-			<div class="logo">
+			<!-- ________________________________________________________Логотип-->
+			<div class="logo"> 
 				<a href="index.html" class="logo__link">
 					<img src="img/logo.png" alt="Logo" class="logo__img">
 				</a>
 			</div>
+			<!-- ______________________________________________________________________________________________Форма поиска-->
 			<div class="search">
 				<form action="#" class="search-form">
 					<input type="search" class="search-form__input" placeholder="Введите название или артикул">
+					<span class="search-form__icon"></span>
 				</form>				
 			</div>
+			<!-- ___________________________Контакты-->
 			<div class="contacts">
 				<p class="contacts__phone">
 					+7 (800) 707-81-39
 				</p>
 			</div>
+			<!-- ____________________________________________________Расписание-->
 			<div class="schedule">
 				<p class="schedule__time">ПН-ПТ с 9:00 до 18:00</p>
 				<p class="schedule__country">Доставка по РФ и СНГ</p>
@@ -58,31 +65,69 @@
 		</div>
 		<hr>
 		<div class="wrapper wrapper-header_w2inside">
+			<!-- __________________________________________________________________________________________Меню-->
 			<nav class="menu">
 				<ul class="menu__list">
 					<li class="menu__item">
 						<div class="menu__dropDown">
-							<a href="#" class="menu__dropDownLink menu__dropDownLink-style1 menu__dropDownLink-style1__::before">
-								Свадебная бижутерия
-							</a>
-							<a href="#" class="menu__dropDownLink menu__dropDownLink-style2 menu__dropDownLink-style2__::before">
-								Аксессуары для волос
-							</a>
-							<a href="#" class="menu__dropDownLink menu__dropDownLink-style3 menu__dropDownLink-style3__::before">
-								Броши
-							</a>
-							<a href="#" class="menu__dropDownLink menu__dropDownLink-style4 menu__dropDownLink-style4__::before">
-								Мужские аксессуары
-							</a>
-							<a href="#" class="menu__dropDownLink menu__dropDownLink-style5 menu__dropDownLink-style5__::before">
-								Клатчи
-							</a>
-							<a href="#" class="menu__dropDownLink menu__dropDownLink-style6 menu__dropDownLink-style6__::before">
-								Детская бижутерия
-							</a>
-							<a href="#" class="menu__dropDownLink menu__dropDownLink-style7 menu__dropDownLink-style7__::before">
-								Демонстрационное<br>оборудование
-							</a>
+							<ul class="menu__dropDownList"">
+								<li class="menu__dropDownItem menu__dropDownItem-style1">
+									<a href="#" class="menu__dropDownLink menu__dropDownLink-style1">
+										Свадебная бижутерия
+									</a>
+								</li>
+								<li class="menu__dropDownItem menu__dropDownItem-style2">
+									<a href="#" class="menu__dropDownLink menu__dropDownLink-style2">
+									Аксессуары для волос
+									</a>
+								</li>
+								<li class="menu__dropDownItem menu__dropDownItem-style3">
+									<a href="#" class="menu__dropDownLink menu__dropDownLink-style3">
+									Броши
+									</a>
+								</li>
+								<li class="menu__dropDownItem menu__dropDownItem-style4">
+									<a href="#" class="menu__dropDownLink menu__dropDownLink-style4">
+									Мужские аксессуары
+									</a>
+									<div class="menu__dropDown-style1">
+										<h4 class="menu__dropDownListHeader">МУЖСКАЯ БИЖУТЕРИЯ</h4>
+										<ul class="menu__dropDownList"">
+											<li class="menu__dropDownItem menu__dropDownItem-style2">
+												<a href="#" class="menu__dropDownLink menu__dropDownLink-style2_1">
+													Браслеты
+												</a>
+											</li>
+											<li class="menu__dropDownItem menu__dropDownItem-style2">
+												<a href="#" class="menu__dropDownLink menu__dropDownLink-style2_2">
+													Кулоны
+												</a>
+											</li>
+											<li class="menu__dropDownItem menu__dropDownItem-style2">
+												<a href="#" class="menu__dropDownLink menu__dropDownLink-style2_3">
+													Зажимы и запонки
+												</a>
+											</li>
+										</ul>
+									</div>
+
+								</li>
+								<li class="menu__dropDownItem menu__dropDownItem-style5">
+									<a href="#" class="menu__dropDownLink menu__dropDownLink-style5">
+									Клатчи
+									</a>
+								</li>
+								<li class="menu__dropDownItem menu__dropDownItem-style6">
+									<a href="#" class="menu__dropDownLink menu__dropDownLink-style6">
+									Детская бижутерия
+									</a>
+								</li>
+								<li class="menu__dropDownItem menu__dropDownItem-style7">
+									<a href="#" class="menu__dropDownLink menu__dropDownLink-style7">
+										Демонстрационное<br>оборудование
+									</a>
+								</li>
+							</ul>
 						</div>
 						<a class="menu__link menu__link-style1"href="#">Каталог товаров</a>
 						<span class="menu__icon fa fa-angle-down" aria-hidden="true"></span>
@@ -95,6 +140,7 @@
 					<li class="menu__item"><a class="menu__link menu__link-style6"href="#">Контакты</a></li>
 				</ul>
 			</nav>
+			<!-- ________________________________________________________Корзина-->
 			<div class="trash">
 				<span class="trash__icon"></span>
 				<p class="trash__iconGoods">
@@ -104,6 +150,7 @@
 					Товаров / <span class="trash__price">56 789 Р</span>
 				</p>
 			</div>
+			<!-- __________________________________Кнопка авторизации-->
 			<div class="auth">
 				<span class="auth__icon"></span>
 				<a href="#" class="auth__link">
