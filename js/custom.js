@@ -116,8 +116,10 @@ $(document).ready(function(){
 		cssEase: 'linear'
 	});
 	$('.fa-angle-down').on('click', function(){
+		$(".menu__dropDown-style1").css({"display":"none"});
 		if ($(".menu__dropDown").css("display") == "block") {
 			$(".menu__dropDown").css({"display":"none"});
+			
 		}
 		else {
 			$(".menu__dropDown").css({"display":"block"});
