@@ -96,8 +96,29 @@ h3{
     -webkit-flex-grow: 1;
 	background: #fff;
 }
-
-
+.slick-slider {
+	&__slide {
+		position: relative;
+	}
+	&__content{
+		background: rgba(188, 147, 82, 0.88) none repeat scroll 0 0;
+		height: 128px;
+		left: 70px;
+		position: absolute;
+		top: 99px;
+		width: 500px;
+	}
+	&__text {
+		color: white;
+		font-family: "PT Sans",sans-serif;
+		font-size: 42.5px;
+		margin: 10px 0 0;
+		padding: 15px 31px;
+		&-marg {
+			margin: 2px 0 0;
+		}
+	}
+}
 
 
 

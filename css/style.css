@@ -563,7 +563,7 @@ button {
 hr {
   color: #b9b8bd;
   margin: 0 auto;
-  width: 64.7%;
+  width: 1242px;
 }
 
 /* reset */
@@ -694,6 +694,28 @@ h3 {
   flex-grow: 1;
   -webkit-flex-grow: 1;
   background: #fff;
+}
+
+.slick-slider__slide {
+  position: relative;
+}
+.slick-slider__content {
+  background: rgba(188, 147, 82, 0.88) none repeat scroll 0 0;
+  height: 128px;
+  left: 70px;
+  position: absolute;
+  top: 99px;
+  width: 500px;
+}
+.slick-slider__text {
+  color: white;
+  font-family: "PT Sans",sans-serif;
+  font-size: 42.5px;
+  margin: 10px 0 0;
+  padding: 15px 31px;
+}
+.slick-slider__text-marg {
+  margin: 2px 0 0;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
