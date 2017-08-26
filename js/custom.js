@@ -106,15 +106,9 @@ var handler = function(){
 }
 $(window).bind('load', handler);
 $(window).bind('resize', handler);
-//Слайдер
+/*_____________________________________Слайдер__________________________________________*/
 $(document).ready(function(){
-	$('.fade').slick({
-		dots: true,
-		infinite: true,
-		speed: 500,
-		fade: false,
-		cssEase: 'linear'
-	});
+/*_____________________________________DropDown меню__________________________________________*/
 	$('.fa-angle-down').on('click', function(){
 		$(".menu__dropDown-style1").css({"display":"none"});
 		if ($(".menu__dropDown").css("display") == "block") {
@@ -129,8 +123,8 @@ $(document).ready(function(){
 	$('.menu__dropDown').mouseleave(function(){
 			$(".menu__dropDown").css({"display":"none"});
 	});*/
-	$(document).mouseup(function (e){ // событие клика по веб-документу
-		var div = $(".menu__dropDown"); // тут указываем ID элемента
+	$(document).mouseup(function (e){ 
+		var div = $(".menu__dropDown"); 
 		var div1 = $(".fa-angle-down");
 		if (!div.is(e.target)
 			&& !div1.is(e.target)
@@ -151,7 +145,7 @@ $(document).ready(function(){
 			$(".menu__dropDown-style1").css({"display":"block"});
 		} 
 	});
-
+	
 });
 
 

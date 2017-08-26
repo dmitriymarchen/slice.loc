@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("../ajax-loader.gif") center center no-repeat;
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
 }
 
 /* Icons */
@@ -12,26 +12,33 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "awesome";
+  src: url("../fonts/font-awesome/fonts/fontawesome-webfont.eot");
+  src: url("../fonts/font-awesome/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/font-awesome/fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/font-awesome/fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/font-awesome/fonts/fontawesome-webfont.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* Arrows */
 .slick-prev,
 .slick-next {
   position: absolute;
   display: block;
-  height: 128px;
-  width: 37px;
+  height: 20px;
+  width: 20px;
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
-  background: #cb944c none repeat scroll 0 0;
-  color: white;
+  background: transparent;
+  color: transparent;
   top: 50%;
-  z-index: 100;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   padding: 0;
   border: none;
   outline: none;
+  z-index: 1000;
 }
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
@@ -51,34 +58,34 @@
 }
 .slick-prev:before,
 .slick-next:before {
-  font-family: "slick";
+  font-family: "awesome";
   font-size: 20px;
   line-height: 1;
-  color: #cb944c;
+  color: black;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
-  left: 0;
+  left: -25px;
 }
 [dir="rtl"] .slick-prev {
   left: auto;
-  right: 0;
+  right: -25px;
 }
 .slick-prev:before {
-  content: "←";
+  content: "\f053";
 }
 [dir="rtl"] .slick-prev:before {
-  content: "→";
+  content: "\f054";
 }
 
 .slick-next {
-  right: 0;
+  right: -25px;
 }
 [dir="rtl"] .slick-next {
-  left: 0;
+  left: -25px;
   right: auto;
 }
 .slick-next:before {
@@ -95,7 +102,7 @@
 
 .slick-dots {
   position: absolute;
-  bottom: -67px;
+  bottom: -25px;
   list-style: none;
   display: block;
   text-align: center;
@@ -108,7 +115,7 @@
   display: inline-block;
   height: 20px;
   width: 20px;
-  margin: 0 10px;
+  margin: 0 5px;
   padding: 0;
   cursor: pointer;
 }
@@ -139,7 +146,7 @@
   width: 20px;
   height: 20px;
   font-family: "slick";
-  font-size: 20px;
+  font-size: 6px;
   line-height: 20px;
   text-align: center;
   color: black;

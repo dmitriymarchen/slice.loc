@@ -1,5 +1,6 @@
 /* Slider */
 .slick-slider {
+  max-width: 100%;
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -66,6 +67,8 @@
 }
 .slick-slide img {
   display: block;
+  height: auto;
+  max-width: 100%;
 }
 .slick-slide.slick-loading img {
   display: none;
